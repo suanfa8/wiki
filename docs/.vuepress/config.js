@@ -8,19 +8,13 @@ module.exports = {
     darkMode: false,
     repo: 'https://github.com/suanfa8/wiki',
     navbar: [
-      // NavbarItem
-      {
-        text: '微服务 SpringCloud',
-        link: '/SpringCloud/',
-      },
-      // NavbarGroup
-      {
-        text: 'Group',
-        children: ['/group/foo.md', '/group/bar.md'],
-      },
-      // 字符串 - 页面文件路径
+      { text: '微服务 SpringCloud', link: '/SpringCloud/' },
+      { text: '算法', children: ['/LeetBook/', '/LeetCode/'] },
+
+      { text: 'Group', children: ['/group/foo.md', '/group/bar.md'] },
       '/tools/vuepress.md'
     ],
+
     // 侧边栏数组
     // 所有页面会使用相同的侧边栏
     sidebar: {
@@ -51,7 +45,7 @@ module.exports = {
           ]
         },
       ],
-      '/algo/': [
+      '/LeetBook/': [
         {
           text: 'LeetBook - 广度优先遍历',
           collapsable: true,
