@@ -1,6 +1,4 @@
-### Compose 方式安装
-
-
+# 2-Docker Compose 方式安装
 
 ```
 vim docker-compose.yml

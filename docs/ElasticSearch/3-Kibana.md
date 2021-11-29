@@ -1,10 +1,8 @@
-
-
-### ElasticSearch 的客户端工具
+# 3-ElasticSearch 的客户端工具-Kibana
 
 > ElasticSearch 是一个服务，所以使用 ElasticSearch 需要一些客户端工具。
 
-# Kibana
+## Kibana
 
 Kibana 是一个针对 ElasticSearch 的开源分析及可视化平台，使用 Kibana 可以查询、查看并与存储在 ES 索引的数据进行交互操作，使用 Kibana 能执行高级的数据分析，并能以图表、表格和地图的形式查看数据。
 
@@ -54,4 +52,3 @@ docker run -d --name kibana -p 5601:5601 -v /opt/docker-kibana/kibana.yml:/usr/s
 
  ![image-20211125112618145](https://tva1.sinaimg.cn/large/008i3skNgy1gwr8gmnhaqj31ag0dmq6q.jpg)
 
-### 
