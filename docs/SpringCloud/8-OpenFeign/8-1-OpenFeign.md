@@ -1,5 +1,7 @@
 # 8-1 OpenFeign 组件的使用
 
+[[toc]]
+
 ![image-20211129084106785](https://tva1.sinaimg.cn/large/008i3skNgy1gwvq5z8dhyj319e0bu0un.jpg)
 
 ::: tip 思考
