@@ -17,8 +17,8 @@ module.exports = [
         "link": "/ElasticSearch/"
     },
     {
-        "text": "Docker",
-        "link": "/Docker/"
+        "text": "Blog",
+        "link": "/Blog/"
     },
     {
         "text": "算法",
