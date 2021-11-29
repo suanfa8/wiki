@@ -6,10 +6,10 @@ const RabbitMQ = require('./sidebar/RabbitMQ.js');
 
 module.exports = {
   '/SpringCloud/': SpringCloud,
-  '/LeetBook/': LeetBook,
-  '/Redis/': Redis,
-  '/ElasticSearch/': ElasticSearch,
-  '/RabbitMQ/': RabbitMQ,
+  // '/LeetBook/': LeetBook,
+  // '/Redis/': Redis,
+  // '/ElasticSearch/': ElasticSearch,
+  // '/RabbitMQ/': RabbitMQ,
   // '/Docker/' : Docker,
   '/': ['']
 }
