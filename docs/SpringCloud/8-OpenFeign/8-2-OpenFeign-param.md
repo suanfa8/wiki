@@ -1,15 +1,15 @@
-## 8-2 调用服务并传参
+# 8-2 调用服务并传参
 
 服务和服务之间通信，不仅仅是调用，往往在调用过程中还伴随着参数传递，接下来重点来看看 `OpenFeign` 在调用服务时如何传递参数。
 
-### GET 方式调用服务传递参数
+## GET 方式调用服务传递参数
 
 GET 方式调用服务传递参数：
 
 - 在商品服务中加入需要传递参数的服务方法来进行测试；
 - 在用户服务中进行调用商品服务中需要传递参数的服务方法进行测试。
 
-1. 商品服务中添加如下方法
+### 1、商品服务中添加如下方法
 
 ```java
 @GetMapping("/product/findOne")
@@ -26,13 +26,16 @@ public Map<String, Object> findOne(String productId) {
 
 ![image-20200713203833730](https://tva1.sinaimg.cn/large/008i3skNgy1gvu7mkve1cj322g0e8q7o.jpg)
 
+### 2、在用户服务中声明 product 客户端中的方法
 
-2. 在用户服务中声明 product 客户端中的方法
+::: danger 注意
 
-> 注意：使用 openfeign 的 GET 方式传递参数，参数变量必须通过 `@requestParam` 注解进行修饰。
-> 如果不加入该注解会出现：`feign.FeignException$MethodNotAllowed: [405]`。
+使用 openfeign 的 GET 方式传递参数，参数变量必须通过 `@requestParam` 注解进行修饰。
+如果不加入该注解会出现：`feign.FeignException$MethodNotAllowed: [405]`。
 
+:::
 
+代码：
 
 ```java
 @FeignClient("PRODUCTS")
@@ -44,11 +47,12 @@ public interface ProductClient {
 
 ![image-20200713204301830](https://tva1.sinaimg.cn/large/008i3skNgy1gvu7mo8uv0j323a08ytac.jpg)
 
-3. 用户服务中调用并传递参数
+### 3、用户服务中调用并传递参数
+
+代码：
 
 
 ```java
-
 // 注入客户端对象
 @Autowired
 private ProductClient productClient;
@@ -64,15 +68,13 @@ public Map<String,Object> test1(String id){
 
 ![image-20200728173210751](https://tva1.sinaimg.cn/large/008i3skNgy1gvu7mr25v9j31vg0a2n02.jpg)
 
-```markdown
-# 测试访问
-```
+测试访问：
 
 ![image-20200713204827577](https://tva1.sinaimg.cn/large/008i3skNgy1gvu7mtvna8j321g0gojv9.jpg)
 
 ![image-20200713204851383](https://tva1.sinaimg.cn/large/008i3skNgy1gvu7mxhgloj31uw03cwg0.jpg)
 
-###### post方式调用服务传递参数
+###### post 方式调用服务传递参数
 
 ```markdown
 # 2.post方式调用服务传递参数
