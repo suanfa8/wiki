@@ -5,14 +5,11 @@ const ElasticSearch = require('./sidebar/ElasticSearch.js');
 const RabbitMQ = require('./sidebar/RabbitMQ.js');
 
 module.exports = {
-  '/SpringCloud/': SpringCloud,
-  '/Redis/': Redis,
-  '/RabbitMQ/': RabbitMQ,
-  '/ElasticSearch/': ElasticSearch,
-  // '/LeetBook/': LeetBook,
-  
-  
-  
-  // '/Docker/' : Docker,
-  '/': ['']
+  "/SpringCloud/": SpringCloud,
+  "/Redis/": Redis,
+  "/RabbitMQ/": RabbitMQ,
+  "/ElasticSearch/": ElasticSearch,
+  // "/LeetBook/": LeetBook,
+  // "/Docker/" : Docker,
+  "/": [""]
 }
