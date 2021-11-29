@@ -1,16 +1,14 @@
-## 3. RabiitMQ 配置
+# 第 3 章 RabiitMQ 配置
 
-### 3.1RabbitMQ 管理命令行
+[[TOC]]
+
+## 3.1-RabbitMQ 管理命令行
 
 + 1.服务启动相关
 
 ```
-systemctl start|restart|stop|status rabbitmq-server
+systemctl start|restart|stop|status rabbitmq-server	
 ```
-
-
-
-	
 
 + 2.管理命令行  
 
@@ -19,9 +17,9 @@ systemctl start|restart|stop|status rabbitmq-server
 ```
 rabbitmqctl help 
 ```
-	
+
 可以查看更多命令。
- 
+
 
 + 3.插件管理命令行
 	
@@ -30,9 +28,9 @@ rabbitmq-plugins enable|list|disable
 ```
 
 
-### 3.2 web管理界面介绍
+## 3.2-web管理界面介绍
 
-#### 3.2.1 overview 概览
+### 3.2.1 overview 概览
 
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/1027/180225_3900cd5a_426516.png "屏幕截图.png")
 
@@ -44,9 +42,9 @@ rabbitmq-plugins enable|list|disable
 
 - `Queues`：队列，即消息队列，消息存放在队列中，等待消费，消费后被移除队列。
 
-#### 3.2.2 Admin 用户和虚拟主机管理
+### 3.2.2 Admin 用户和虚拟主机管理
 
-##### 1. 添加用户
+#### 1. 添加用户
 
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/1027/180317_b6a21b1f_426516.png "屏幕截图.png")
 
@@ -72,7 +70,7 @@ rabbitmq-plugins enable|list|disable
 
   无法登陆管理控制台，通常就是普通的生产者和消费者。
 
-##### 2. 创建虚拟主机
+#### 2. 创建虚拟主机
 
 ```markdown
 # 虚拟主机
@@ -81,7 +79,7 @@ rabbitmq-plugins enable|list|disable
 
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/1027/180346_e57a8de8_426516.png "屏幕截图.png")
 
-##### 3. 绑定虚拟主机和用户
+#### 3. 绑定虚拟主机和用户
 
 创建好虚拟主机，我们还要给用户添加访问权限：
 

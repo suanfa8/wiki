@@ -1,6 +1,8 @@
-## 2. RabbitMQ 的引言
+# 第 2 章 RabbitMQ 的引言
 
-### 2.1 RabbitMQ 
+[[TOC]]
+
+## 2.1-RabbitMQ 
 
 + 官网: https://www.rabbitmq.com/
 + 官方教程: https://www.rabbitmq.com/#getstarted
@@ -17,9 +19,9 @@ AMQP（advanced message queuing protocol）在 2003 年时被提出，最早用�
 
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/1027/175427_0c561bad_426516.png "屏幕截图.png")
 
-### 2.2 RabbitMQ 的安装
+## 2.2-RabbitMQ 的安装
 
-#### 2.2.1 下载
+### 2.2.1 下载
 
 + 官网下载地址: https://www.rabbitmq.com/download.html
 
@@ -29,13 +31,13 @@ AMQP（advanced message queuing protocol）在 2003 年时被提出，最早用�
 
 
 
-#### 2.2.2 下载的安装包
+### 2.2.2 下载的安装包
 
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/1027/175610_f3f002dd_426516.png "屏幕截图.png")
 
 注意：这里的安装包是 centos7 安装的包。
 
-#### 2.2.3 安装步骤
+### 2.2.3 安装步骤
 
 ```markdown
 # 1.将rabbitmq安装包上传到linux系统中
