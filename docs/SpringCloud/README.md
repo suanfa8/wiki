@@ -10,3 +10,24 @@
 + 源代码：[https://github.com/suanfa8/hellospringcloud](https://github.com/suanfa8/hellospringcloud)
 
 :::
+
+# SpringCloud 微服务「工具集」 V 1.1
+
+参考资料：
+
+GitBook：https://xiaoxiami.gitbook.io/spring-cloud/
+
+周立的书：https://github.com/eacdy/spring-cloud-book
+
+使用Spring Cloud与Docker实战微服务：https://eacdy.gitbooks.io/spring-cloud-book/content/
+
+http://www.spring4all.com/
+
+程序猿 DD：https://blog.didispace.com/
+
+
+解道 JDON：Spring Cloud微服务云应用教程：https://www.jdon.com/springcloud.html
+
+
+Google Java Style Guide：https://google.github.io/styleguide/javaguide.html
+
